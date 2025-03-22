@@ -6,3 +6,12 @@ There are 5 seconds in a year!
 
 You should use constants for this exercise -- there are 365 days in a year, 24 hours in a day, 60 minutes in an hour, and 60 seconds per minute.
 '''
+
+def main():
+    print("Delete this line and write your code here! :)")
+
+
+# This provided line is required at the end of
+# Python file to call the main() function.
+if __name__ == '__main__':
+    main()

@@ -14,3 +14,12 @@ Please type a verb and press enter. fly
 
 Code in Place is fun. I learned to program and used Python to make my tiny plant fly!
 '''
+
+def main():
+    print("Delete this line and write your code here! :)")
+
+
+# This provided line is required at the end of
+# Python file to call the main() function.
+if __name__ == '__main__':
+    main()

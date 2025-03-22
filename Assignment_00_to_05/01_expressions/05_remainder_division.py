@@ -10,3 +10,12 @@ Please enter an integer to divide by: 3
 
 The result of this division is 1 with a remainder of 2
 '''
+
+def main():
+    print("Delete this line and write your code here! :)")
+
+
+# This provided line is required at the end of
+# Python file to call the main() function.
+if __name__ == '__main__':
+    main()

@@ -18,3 +18,12 @@ Enter the length of AC: 4
 
 The length of BC (the hypotenuse) is: 5.0
 '''
+
+def main():
+    print("Delete this line and write your code here! :)")
+
+
+# This provided line is required at the end of
+# Python file to call the main() function.
+if __name__ == '__main__':
+    main()
