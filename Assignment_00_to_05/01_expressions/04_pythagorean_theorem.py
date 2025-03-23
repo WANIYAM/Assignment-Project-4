@@ -19,11 +19,18 @@ Enter the length of AC: 4
 The length of BC (the hypotenuse) is: 5.0
 '''
 
+import math
+
 def main():
-    print("Delete this line and write your code here! :)")
+    # Get the lengths of the two perpendicular sides from the user
+    AB = float(input("Enter the length of AB: "))
+    AC = float(input("Enter the length of AC: "))
 
+    # Calculate the hypotenuse using the Pythagorean theorem
+    BC = math.sqrt(AB**2 + AC**2)
 
-# This provided line is required at the end of
-# Python file to call the main() function.
+    # Display the result
+    print(f"The length of BC (the hypotenuse) is: {BC:.2f}")
+
 if __name__ == '__main__':
     main()

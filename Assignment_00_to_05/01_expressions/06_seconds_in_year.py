@@ -8,10 +8,15 @@ You should use constants for this exercise -- there are 365 days in a year, 24 h
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
-
-
-# This provided line is required at the end of
-# Python file to call the main() function.
+    # Define constants
+    SECONDS_PER_MINUTE = 60
+    MINUTES_PER_HOUR = 60
+    HOURS_PER_DAY = 24
+    DAYS_PER_YEAR = 365
+    # Calculate seconds in a year
+    seconds_in_year = DAYS_PER_YEAR * HOURS_PER_DAY * MINUTES_PER_HOUR * SECONDS_PER_MINUTE
+    # Print result
+    print(f"There are {seconds_in_year} seconds in a year!")
+    
 if __name__ == '__main__':
     main()

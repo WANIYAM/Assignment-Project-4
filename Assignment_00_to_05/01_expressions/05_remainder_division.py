@@ -12,10 +12,16 @@ The result of this division is 1 with a remainder of 2
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    # Get user input for the two numbers
+    num1 = int(input("Please enter an integer to be divided: "))
+    num2 = int(input("Please enter an integer to divide by: "))
 
+# Perform division and find the remainder
+    quotient = num1 // num2
+    remainder = num1 % num2
 
-# This provided line is required at the end of
-# Python file to call the main() function.
+# Display the result
+    print(f"The result of this division is {quotient} with a remainder of {remainder}")
+
 if __name__ == '__main__':
     main()

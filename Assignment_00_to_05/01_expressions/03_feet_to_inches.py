@@ -4,10 +4,15 @@ Converts feet to inches. Feet is an American unit of measurement. There are 12 i
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    # Ask the user for the number of feet
+    feet = float(input("Enter the number of feet: "))
 
+    # Convert feet to inches (1 foot = 12 inches)
+    inches = feet * 12
 
-# This provided line is required at the end of
-# Python file to call the main() function.
+    # Display the result
+    print(f"{feet} feet is equal to {inches:.2f} inches.")
+
+# This line ensures the main function runs when the script is executed
 if __name__ == '__main__':
     main()
