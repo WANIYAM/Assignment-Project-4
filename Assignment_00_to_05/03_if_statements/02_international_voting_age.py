@@ -23,10 +23,29 @@ You cannot vote in Mayengua where the voting age is 48.
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    # Ask the user for their age
+    age = int(input("How old are you? "))
+    
+    # Define voting ages in fictional countries
+    peturksbouipo_age = 16
+    stanlau_age = 25
+    mayengua_age = 48
+    
+    # Check voting eligibility and print results
+    if age >= peturksbouipo_age:
+        print(f"You can vote in Peturksbouipo where the voting age is {peturksbouipo_age}.")
+    else:
+        print(f"You cannot vote in Peturksbouipo where the voting age is {peturksbouipo_age}.")
+    
+    if age >= stanlau_age:
+        print(f"You can vote in Stanlau where the voting age is {stanlau_age}.")
+    else:
+        print(f"You cannot vote in Stanlau where the voting age is {stanlau_age}.")
+    
+    if age >= mayengua_age:
+        print(f"You can vote in Mayengua where the voting age is {mayengua_age}.")
+    else:
+        print(f"You cannot vote in Mayengua where the voting age is {mayengua_age}.")
 
-
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()
