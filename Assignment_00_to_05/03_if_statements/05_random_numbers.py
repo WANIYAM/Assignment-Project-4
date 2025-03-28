@@ -14,11 +14,13 @@ Recall that the python random library has a function randint which returns an in
 value = random.randint(1, 6)
 '''
 
+import random
+
 def main():
-    print("Delete this line and write your code here! :)")
+    # Generate and print 10 random numbers in the range 1 to 100
+    random_numbers = [random.randint(1, 100) for _ in range(10)]
+    print(" ".join(map(str, random_numbers)))
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

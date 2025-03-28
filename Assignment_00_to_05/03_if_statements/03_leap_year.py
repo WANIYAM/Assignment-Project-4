@@ -12,12 +12,16 @@ Your code should use the above criteria to check for a leap year and then print 
 
 
 '''
-
 def main():
-    print("Delete this line and write your code here! :)")
+    # Read year from user
+    year = int(input("Enter a year: "))
+    
+    # Check if it's a leap year
+    if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+        print("That's a leap year!")
+    else:
+        print("That's not a leap year.")
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

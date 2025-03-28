@@ -17,10 +17,23 @@ You're not tall enough to ride, but maybe next year!
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    MIN_HEIGHT = 50  # Set the minimum height requirement
+    
+    while True:
+        height = input("How tall are you? ")
+        
+        if not height:  # Exit loop if no input is given
+            break
+        
+        try:
+            height = int(height)
+            if height >= MIN_HEIGHT:
+                print("You're tall enough to ride!")
+            else:
+                print("You're not tall enough to ride, but maybe next year!")
+        except ValueError:
+            print("Please enter a valid number.")
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()
