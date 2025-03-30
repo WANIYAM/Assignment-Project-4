@@ -20,10 +20,27 @@ How many (mango) do you want?: 3
 Your total is $99.5
 '''
 def main():
-    print("Delete this line and write your code here! :)")
+    # Dictionary of fruits with their respective prices
+    fruit_prices = {
+        "apple": 3.0,
+        "durian": 15.0,
+        "jackfruit": 10.0,
+        "kiwi": 2.5,
+        "rambutan": 5.0,
+        "mango": 7.5
+    }
+    
+    total_cost = 0
+    
+    # Loop through each fruit and ask the user how many they want
+    for fruit, price in fruit_prices.items():
+        quantity = int(input(f"How many ({fruit}) do you want?: "))
+        total_cost += quantity * price
+    
+    # Print the total cost
+    print(f"Your total is ${total_cost:.2f}")
 
-
-# This provided line is required at the end of
-# Python file to call the main() function.
+# Required to call the main function
 if __name__ == '__main__':
     main()
+
