@@ -9,10 +9,16 @@ Note that you can call input() with no prompt and it will still wait for a user 
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    affirmation = "I am capable of doing anything I put my mind to."
+    print(f"Please type the following affirmation: {affirmation}")
+    
+    while True:
+        user_input = input()
+        if user_input == affirmation:
+            print("That's right! :)")
+            break
+        else:
+            print("Hmmm That was not the affirmation. Please try again:")
 
-
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

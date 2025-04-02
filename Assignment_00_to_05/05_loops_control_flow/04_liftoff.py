@@ -15,10 +15,9 @@ Will print out the values 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. The values printed in li
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    for i in range(10, 0, -1):
+        print(i, end=' ')
+    print("Liftoff!")
 
-
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()
