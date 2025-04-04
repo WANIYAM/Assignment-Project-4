@@ -7,11 +7,18 @@ Enter a number: 2 Double that is 4
 
 '''
 
+def double(num):
+    return num * 2
+
 def main():
-    print("Delete this line and write your code here! :)")
+    user_input = input("Enter a number: ")
+    try:
+        number = float(user_input)
+        result = double(number)
+        print(f"Double that is {result}")
+    except ValueError:
+        print("Please enter a valid number.")
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

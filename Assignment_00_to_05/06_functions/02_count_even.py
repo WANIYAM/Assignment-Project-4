@@ -11,10 +11,19 @@ If you'd prefer to focus on the second task only, scroll down for our implementa
 
 
 def main():
-    print("Delete this line and write your code here! :)")
+    lst = []
+    while True:
+        user_input = input("Enter an integer or press enter to stop: ")
+        if user_input == "":
+            break
+        try:
+            number = int(user_input)
+            lst.append(number)
+        except ValueError:
+            print("Please enter a valid integer.")
+    
+    even_count = sum(1 for num in lst if num % 2 == 0)
+    print(f"Number of even numbers: {even_count}")
 
-
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()
