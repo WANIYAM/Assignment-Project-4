@@ -7,11 +7,14 @@ Enter a number: 42 The ones digit is 2
 
 '''
 
+def print_ones_digit(num):
+    ones_digit = abs(num) % 10
+    print(f"The ones digit is {ones_digit}")
+
 def main():
-    print("Delete this line and write your code here! :)")
+    num = int(input("Enter a number: "))
+    print_ones_digit(num)
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

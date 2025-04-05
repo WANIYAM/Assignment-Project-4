@@ -4,10 +4,12 @@
 '''
 
 def main():
-    print("Delete this line and write your code here! :)")
+    for i in range(10, 20):
+        if i % 2 == 0:
+            print(f"{i} even", end=" ")
+        else:
+            print(f"{i} odd", end=" ")
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()

@@ -7,11 +7,13 @@ Howdy Sophia ! 🤠
 
 '''
 
+def get_name():
+    return "Sophia"
+
 def main():
-    print("Delete this line and write your code here! :)")
+    name = get_name()
+    print(f"Howdy {name} ! 🤠")
 
 
-# This provided line is required at the end of
-# Python file to call the main() function.
 if __name__ == '__main__':
     main()
